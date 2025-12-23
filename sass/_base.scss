@@ -1,23 +1,23 @@
 // COLOR VARIABLES
-$dark-navy: #2a1538;
-$semi-dark-navy: #3b1f52;
-$silver: #f3e9ff;
-$silver-hover: #ffffff;
-$light-blue: #9d4edd;
-$light-blue-hover: #b86bff;
-$light-yellow: #f5c542;
-$light-yellow-hover: #ffd966;
-// $bg-main: #2a1538;         // deep royal purple
-// $bg-secondary: #3b1f52;    // rich violet
-// $text-main: #f3e9ff;
-// $text-hover: #ffffff;
+// $dark-navy: #2a1538;
+// $semi-dark-navy: #3b1f52;
+// $silver: #f3e9ff;
+// $silver-hover: #ffffff;
+// $light-blue: #9d4edd;
+// $light-blue-hover: #b86bff;
+// $light-yellow: #f5c542;
+// $light-yellow-hover: #ffd966;
+$bg-main: #2a1538;         // deep royal purple
+$bg-secondary: #3b1f52;    // rich violet
+$text-main: #f3e9ff;
+$text-hover: #ffffff;
 
 
-// $accent-x: #9d4edd;        // vivid purple
-// $accent-x-hover: #b86bff;
+$accent-x: #9d4edd;        // vivid purple
+$accent-x-hover: #b86bff;
 
-// $accent-o: #f5c542;        // royal gold
-// $accent-o-hover: #ffd966;
+$accent-o: #f5c542;        // royal gold
+$accent-o-hover: #ffd966;
 
 // MIXINS
 @mixin headingsCommon {
