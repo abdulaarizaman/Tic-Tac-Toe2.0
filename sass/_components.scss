@@ -12,19 +12,18 @@
 	max-width: 90%;
 	animation: fadeIn 1s ease-in-out;
 
-	
 	&__choices {
 		margin: 4rem 0;
-		background-color: $bg-secondary;
+		background-color: #3b1f52; // bg-secondary
 		padding: 2.4rem;
 		border-radius: 1.5rem;
-		box-shadow: inset 0 -0.8rem 0 darken($bg-secondary, 10);
+		box-shadow: inset 0 -0.8rem 0 darken(#3b1f52, 10);
 	}
 
 	&__marks {
 		margin: 2.4rem 0 1.7rem;
 		padding: 0.9rem 0.8rem;
-		background-color: $bg-main;
+		background-color: #2a1538; // bg-main
 		border-radius: 1rem;
 		display: flex;
 		height: 7rem;
@@ -44,15 +43,15 @@
 		flex-basis: 50%;
 
 		&:hover {
-			background-color: lighten($bg-main, 4);
+			background-color: lighten(#2a1538, 4);
 			cursor: pointer;
 		}
 
 		&.selected {
-			background-color: $text-main;
+			background-color: #f3e9ff; // text-main
 
 			svg {
-				fill: $bg-main;
+				fill: #2a1538;
 			}
 		}
 	}
@@ -61,13 +60,13 @@
 	&__o-icon {
 		width: 3.2rem;
 		height: 3.2rem;
-		fill: $text-main;
+		fill: #f3e9ff;
 	}
 
 	&__footer {
 		text-transform: uppercase;
 		opacity: 0.6;
-		color: $text-main;
+		color: #f3e9ff;
 	}
 }
 
@@ -77,7 +76,7 @@
 	width: 100%;
 	font-size: 2rem;
 	font-weight: 700;
-	color: $bg-main;
+	color: #2a1538;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 2.5rem 12rem;
@@ -107,29 +106,29 @@
 	}
 
 	&--yellow {
-		background-color: $accent-o;
-		box-shadow: inset 0 -0.8rem 0 darken($accent-o, 20);
+		background-color: #f5c542; // accent-o
+		box-shadow: inset 0 -0.8rem 0 darken(#f5c542, 20);
 
 		&:hover {
-			background-color: $accent-o-hover;
+			background-color: #ffd966;
 		}
 	}
 
 	&--blue {
-		background-color: $accent-x;
-		box-shadow: inset 0 -0.8rem 0 darken($accent-x, 20);
+		background-color: #9d4edd; // accent-x
+		box-shadow: inset 0 -0.8rem 0 darken(#9d4edd, 20);
 
 		&:hover {
-			background-color: $accent-x-hover;
+			background-color: #b86bff;
 		}
 	}
 
 	&--silver {
-		background-color: $text-main;
-		box-shadow: inset 0 -0.8rem 0 darken($text-main, 15);
+		background-color: #f3e9ff;
+		box-shadow: inset 0 -0.8rem 0 darken(#f3e9ff, 15);
 
 		&:hover {
-			background-color: $text-hover;
+			background-color: #ffffff;
 		}
 	}
 }
@@ -145,30 +144,30 @@
 	animation: fadeIn 0.4s ease-in-out;
 
 	&__turn {
-		background-color: $bg-secondary;
+		background-color: #3b1f52;
 		padding: 2rem 3rem;
 		border-radius: 1rem;
-		box-shadow: inset 0 -0.4rem 0 darken($bg-secondary, 10);
+		box-shadow: inset 0 -0.4rem 0 darken(#3b1f52, 10);
 		display: flex;
 		align-items: center;
 
 		&-icon {
 			width: 2rem;
 			height: 2rem;
-			fill: $text-main;
+			fill: #f3e9ff;
 		}
 	}
 
 	&__restart {
 		width: 50%;
-		background-color: $text-main;
+		background-color: #f3e9ff;
 		padding: 1.6rem;
 		border-radius: 1rem;
-		box-shadow: inset 0 -0.4rem 0 darken($text-main, 15);
+		box-shadow: inset 0 -0.4rem 0 darken(#f3e9ff, 15);
 		justify-self: flex-end;
 
 		&:hover {
-			background-color: $text-hover;
+			background-color: #ffffff;
 			cursor: pointer;
 		}
 	}
@@ -182,10 +181,10 @@
 	}
 
 	&__card {
-		background-color: $bg-secondary;
+		background-color: #3b1f52;
 		padding: 3.8rem;
 		border-radius: 1.5rem;
-		box-shadow: inset 0 -0.8rem 0 darken($bg-secondary, 10);
+		box-shadow: inset 0 -0.8rem 0 darken(#3b1f52, 10);
 
 		&:hover {
 			cursor: pointer;
@@ -205,8 +204,8 @@
 		}
 
 		&.x.win {
-			background-color: $accent-x;
-			box-shadow: 0 0 25px rgba($accent-x, 0.6);
+			background-color: #9d4edd;
+			box-shadow: 0 0 25px rgba(157, 78, 221, 0.6);
 
 			&::before {
 				content: url('../images/SVG/icon-x-win.svg');
@@ -214,8 +213,8 @@
 		}
 
 		&.o.win {
-			background-color: $accent-o;
-			box-shadow: 0 0 25px rgba($accent-o, 0.6);
+			background-color: #f5c542;
+			box-shadow: 0 0 25px rgba(245, 197, 66, 0.6);
 
 			&::before {
 				content: url('../images/SVG/icon-o-win.svg');
@@ -231,7 +230,7 @@
 	left: 0;
 	width: 100%;
 	padding: 6.7rem 0;
-	background-color: $bg-secondary;
+	background-color: #3b1f52;
 	transform: translateY(-50%);
 	text-align: center;
 	display: none;
