@@ -1,25 +1,21 @@
-// COLOR VARIABLES
-// $dark-navy: #2a1538;
-// $semi-dark-navy: #3b1f52;
-// $silver: #f3e9ff;
-// $silver-hover: #ffffff;
-// $light-blue: #9d4edd;
-// $light-blue-hover: #b86bff;
-// $light-yellow: #f5c542;
-// $light-yellow-hover: #ffd966;
+// ===============================
+// COLOR VARIABLES (ROYAL THEME)
+// ===============================
 $bg-main: #2a1538;         // deep royal purple
 $bg-secondary: #3b1f52;    // rich violet
+
 $text-main: #f3e9ff;
 $text-hover: #ffffff;
 
-
-$accent-x: #9d4edd;        // vivid purple
+$accent-x: #9d4edd;        // X (purple)
 $accent-x-hover: #b86bff;
 
-$accent-o: #f5c542;        // royal gold
+$accent-o: #f5c542;        // O (gold)
 $accent-o-hover: #ffd966;
 
+// ===============================
 // MIXINS
+// ===============================
 @mixin headingsCommon {
 	font-weight: 700;
 	text-transform: uppercase;
@@ -40,7 +36,9 @@ $accent-o-hover: #ffd966;
 	}
 }
 
+// ===============================
 // RESET
+// ===============================
 *,
 *::before,
 *::after {
@@ -49,7 +47,9 @@ $accent-o-hover: #ffd966;
 	box-sizing: inherit;
 }
 
-// MAIN STYLE
+// ===============================
+// BASE STYLES
+// ===============================
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -68,8 +68,8 @@ body {
 	font-size: 1.4rem;
 	font-weight: 500;
 	line-height: 1.8rem;
-	color: $silver;
-	background-color: $dark-navy;
+	color: $text-main;
+	background-color: $bg-main;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -78,7 +78,9 @@ body {
 	position: relative;
 }
 
+// ===============================
 // UTILITIES
+// ===============================
 .container {
 	max-width: 90%;
 }
@@ -89,11 +91,11 @@ body {
 	line-height: 5rem;
 
 	&--blue {
-		color: $light-blue;
+		color: $accent-x;
 	}
 
 	&--yellow {
-		color: $light-yellow;
+		color: $accent-o;
 	}
 
 	@include respond(small) {
@@ -105,15 +107,8 @@ body {
 	@include headingsCommon;
 	font-size: 1.6rem;
 	line-height: 2rem;
+	color: $text-main;
 }
-
-// .text-yellow {
-// 	color: $light-yellow;
-// }
-
-// .text-blue {
-// 	color: $light-blue;
-// }
 
 .d-none {
 	display: none !important;
@@ -127,13 +122,159 @@ body {
 	display: block !important;
 }
 
+// ===============================
 // ANIMATION
+// ===============================
 @keyframes fadeIn {
-	0% {
+	from {
 		opacity: 0;
 	}
-
-	100% {
+	to {
 		opacity: 1;
 	}
 }
+
+
+
+
+
+
+// // COLOR VARIABLES
+// // $dark-navy: #2a1538;
+// // $semi-dark-navy: #3b1f52;
+// // $silver: #f3e9ff;
+// // $silver-hover: #ffffff;
+// // $light-blue: #9d4edd;
+// // $light-blue-hover: #b86bff;
+// // $light-yellow: #f5c542;
+// // $light-yellow-hover: #ffd966;
+// $bg-main: #2a1538;         // deep royal purple
+// $bg-secondary: #3b1f52;    // rich violet
+// $text-main: #f3e9ff;
+// $text-hover: #ffffff;
+
+
+// $accent-x: #9d4edd;        // vivid purple
+// $accent-x-hover: #b86bff;
+
+// $accent-o: #f5c542;        // royal gold
+// $accent-o-hover: #ffd966;
+
+// // MIXINS
+// @mixin headingsCommon {
+// 	font-weight: 700;
+// 	text-transform: uppercase;
+// }
+
+// // MEDIA QUERY MANAGER
+// @mixin respond($breakpoint) {
+// 	@if $breakpoint == small {
+// 		@media only screen and (max-width: 37.5em) {
+// 			@content;
+// 		}
+// 	}
+
+// 	@if $breakpoint == ex-small {
+// 		@media only screen and (max-width: 18.75em) {
+// 			@content;
+// 		}
+// 	}
+// }
+
+// // RESET
+// *,
+// *::before,
+// *::after {
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: inherit;
+// }
+
+// // MAIN STYLE
+// html {
+// 	font-size: 62.5%;
+// 	box-sizing: border-box;
+
+// 	@include respond(small) {
+// 		font-size: 56.25%;
+// 	}
+
+// 	@include respond(ex-small) {
+// 		font-size: 35%;
+// 	}
+// }
+
+// body {
+// 	font-family: 'Outfit', sans-serif;
+// 	font-size: 1.4rem;
+// 	font-weight: 500;
+// 	line-height: 1.8rem;
+// 	color: $silver;
+// 	background-color: $dark-navy;
+// 	min-height: 100vh;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	overflow-x: hidden;
+// 	position: relative;
+// }
+
+// // UTILITIES
+// .container {
+// 	max-width: 90%;
+// }
+
+// .heading-lg {
+// 	@include headingsCommon;
+// 	font-size: 4rem;
+// 	line-height: 5rem;
+
+// 	&--blue {
+// 		color: $light-blue;
+// 	}
+
+// 	&--yellow {
+// 		color: $light-yellow;
+// 	}
+
+// 	@include respond(small) {
+// 		font-size: 2.4rem;
+// 	}
+// }
+
+// .heading-xs {
+// 	@include headingsCommon;
+// 	font-size: 1.6rem;
+// 	line-height: 2rem;
+// }
+
+// // .text-yellow {
+// // 	color: $light-yellow;
+// // }
+
+// // .text-blue {
+// // 	color: $light-blue;
+// // }
+
+// .d-none {
+// 	display: none !important;
+// }
+
+// .d-grid {
+// 	display: grid !important;
+// }
+
+// .d-block {
+// 	display: block !important;
+// }
+
+// // ANIMATION
+// @keyframes fadeIn {
+// 	0% {
+// 		opacity: 0;
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 	}
+// }
